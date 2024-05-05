@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CreateEvent.css';
+import {  useNavigate } from 'react-router-dom';
 
 
 function CreateEvent() {
@@ -13,6 +14,8 @@ function CreateEvent() {
         eventimage: ''
     });
 
+    const navigate = useNavigate();
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -23,16 +26,12 @@ function CreateEvent() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
-        setFormData({
-            eventName: '',
-            eventDate: '',
-            eventTime: '',
-            eventLocation: '',
-            eventDescription: '',
-            eventGoals: '',
-            eventimage: ''
-        });
+        if (Object.values(formData).every(value => value !== '')) {
+            console.log(formData);
+            navigate('/EventCreated');
+        } else {
+            alert('Please fill in all fields.');
+        }
     };
 
     return (
@@ -68,7 +67,7 @@ function CreateEvent() {
                     <input type="file" id="eventimage" name="eventimage" value={formData.eventimage} onChange={handleChange} accept='image/*, video/*' required />
                 </div>
                 <div className="button-container">
-                    <button type="submit" className="button">Submit</button>
+                    <button type='submit' className="button">Submit</button>
                 </div>
             </form>
         </div>
