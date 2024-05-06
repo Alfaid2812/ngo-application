@@ -1,7 +1,9 @@
 import React from 'react'
-import HeroSection from './HeroSection'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import HeroSection from './HeroSection';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Events from './Events';
+import ContactUs from './ContactUs';
 
 
 function Home() {
@@ -9,6 +11,8 @@ function Home() {
     <div>
       <Navbar />
       <HeroSection />
+      <Events />
+      <ContactUs />
       <Footer />
     </div>
   )
