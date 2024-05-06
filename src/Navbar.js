@@ -9,9 +9,9 @@ function Navbar() {
             <ul className='navbar-list'>
                 <li><a className='logo'>Event Hub</a></li>
                 <li><a className='navbar-link'><Link to='/home'>Home</Link></a></li>
-                <li><a  className='navbar-link'>About Us</a></li>
-                <li><a  className='navbar-link'>Events</a></li>
-                <li><a  className='navbar-link'>Contact Us</a></li>
+                <li><a className='navbar-link'><Link to='/aboutus'>About Us</Link></a></li>
+                <li><a className='navbar-link'><Link to='/events'>Events</Link></a></li>
+                <li><a className='navbar-link'><Link to='/contactus'>Contact Us</Link></a></li>
             </ul>
         </nav>
     )

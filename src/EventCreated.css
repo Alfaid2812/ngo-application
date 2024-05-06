@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f8e4; 
+    background-color: #f0f8e4;
 }
 
 .event-created-container h2 {
@@ -14,10 +14,7 @@
 }
 
 .event-created-container p {
-    color: #333; 
+    color: #333;
     font-size: 18px;
     text-align: center;
 }
-
-  
-  

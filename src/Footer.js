@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-  return (
-    <footer className="footer">
+    return (
+        <footer className="footer">
             <div className="footer-container">
                 <div className="footer-column">
                     <h3>About Us</h3>
@@ -35,7 +35,7 @@ function Footer() {
                 <p>&copy; 2024 EventHub. All rights reserved.</p>
             </div>
         </footer>
-  )
+    )
 }
 
 export default Footer

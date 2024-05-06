@@ -5,6 +5,9 @@ import HeroSection from './HeroSection';
 import CreateEvent from './CreateEvent';
 import Home from './Home';
 import EventCreated from './EventCreated';
+import AboutUs from './AboutUs';
+import Events from './Events';
+import ContactUs from './ContactUs';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
               <Route path='/home' Component={Home}></Route>
               <Route path='/CreateEvent' Component={CreateEvent}></Route>
               <Route path='EventCreated' Component={EventCreated}></Route>
+              <Route path='aboutus' Component={AboutUs}></Route>
+              <Route path='events' Component={Events}></Route>
+              <Route path='contactus' Component={ContactUs}></Route>
             </Routes>
           </switch>
         </BrowserRouter>
